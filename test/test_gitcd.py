@@ -16,7 +16,7 @@ path = None
 @pytest.fixture(scope="session", autouse=True)
 def setup(tmpdir_factory):
     global path
-    path = tmpdir_factory.mktemp("gitcd")
+    path = str(tmpdir_factory.mktemp("gitcd"))
     print("tmpdir: %s" % path)
     
 class Test_Gitcd():
