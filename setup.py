@@ -5,7 +5,7 @@ with open('README.md', 'r') as file:
 
 setup(
     name='gitcd',
-    version='0.0.1',
+    version='0.0.2',
     author='Joseph Lam',
     author_email='mhlamaf@connect.ust.hk',
     description='A terminal tool for easy navigation to local git repository',
@@ -37,7 +37,7 @@ setup(
     ],
     entry_points={
         'console_scripts':[
-            'git-cd=gitcd.cli_interface:cli'
+            'gitcd=gitcd.cli_interface:cli'
         ],
     },
 )
