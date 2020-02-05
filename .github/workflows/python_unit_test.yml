@@ -17,9 +17,9 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: ${{ matrix.python-version }}
-    - name: upgrade pip
-      run: |
-        python -m pip install --upgrade pip
+    # - name: upgrade pip
+    #   run: |
+    #     python -m pip install --upgrade pip
     - name: Install gitcd
       run: |
         pip install .
