@@ -25,7 +25,7 @@ setup(
     ],
     keywords='git terminal',
     include_package_data=True,
-    packages=find_packages(),
+    packages=["gitcd"],
     install_requires=[
         'Click',
     ],
