@@ -4,7 +4,7 @@ with open('README.md', 'r') as file:
     long_description = file.read()
 
 setup(
-    name='gitcd',
+    name='git-cd',
     version='0.0.1',
     author='Joseph Lam',
     author_email='mhlamaf@connect.ust.hk',
