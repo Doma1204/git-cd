@@ -11,9 +11,12 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
         python-version: [2.7, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8]
         exclude:
-        -os: ubuntu-latest
-          python-version: [3.2, 3.3, 3.4]
-
+        - os: ubuntu-latest
+          python-version: 3.2
+        - os: ubuntu-latest
+          python-version: 3.3
+        - os: ubuntu-latest
+          python-version: 3.4
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }} in ${{ matrix.os }}
